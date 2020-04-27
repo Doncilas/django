@@ -1,4 +1,24 @@
+/*
 selected tag{
     property: value;
+}*/
 
+h1{
+    color:purple;
+}
+
+body{
+    background-color: white;
+}
+
+.group_two li:first-child {
+   color:red;
+}
+
+#doar_un_id{
+    color:red;
+}
+
+#text-field {
+    color:red;
 }
