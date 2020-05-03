@@ -27,12 +27,21 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 SECRET_KEY = 'j679k(0aninsd)gs_!(2hs%03dt6139&2)dyci5y92d-6t!_3a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+"""
+cand lansez pe hostul mare sa pun
+DEBUG = False
+ALLOWED_HOST = numele siteului meu
+"""
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
+"""
+intotdeauna sa pun si numele aplicatiei
+"""
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,7 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sergiu_website'
+    'sergiu_website',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +64,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'my_personal_blog.urls'
+
+"""
+DIRS => variabila facuta sus
+"""
 
 TEMPLATES = [
     {
@@ -121,6 +134,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+"""
+Eu: staticfiles_dirs adaugat sa le ia pe toate
+"""
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [

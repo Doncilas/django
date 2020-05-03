@@ -1,9 +1,15 @@
-/*
-selected tag{
+/*selected tag{
     property: value;
 }*/
 
 h1{
-    color:purple;
+    color:red;
 }
 
+table, th, td{
+    border: 2px solid black;
+}
+
+h4{
+    color:purple
+}

@@ -15,15 +15,37 @@
     <p>This is a paragraph.</p>
 </div>
 
+<div class="django-tabel">
+       {% if access_records %}
+        <table>
+            <thead>
+            <th> Site Name</th>
+            <th> Hau</th>
+            </thead>
+
+                {% for acc in access_records %}
+        <tr>
+            <td>{{ acc.date }}</td>
+            <td>{{ acc.name }}</td>
+
+
+        </tr>
+        {%endfor%}
+        </table>
+        {%else %}
+            <p>No access</p>
+        {%endif%}
+
+</div>
+
 <h4 id="doar_un_id">This is heading 4</h4>
 <img src="{% static 'images/hug.jpg' %}"  alt ="Uh Oh, no show!">
 
 
 
-{{ insert_me }}
+{{ access_records }}
 
 
-<a href = "{% url 'help_me' %}">Go to help Page</a>
 
 <div class="group_two">
     <ul>
