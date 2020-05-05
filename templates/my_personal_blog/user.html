@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Users Title</title>
+    <link rel="stylesheet" href="{% static 'css/user_css.css' %}"/>
+</head>
+<body>
+
+<div class="emails_table">
+       {% if users %}
+
+        <ol>
+            {% for user in users %}
+            <li>User Info</li>
+            <ol>
+            <ul>
+            <li>First Name: {{ user.first_name }}</li>
+             <li>Last Name: {{ user.last_name }}</li>
+            <li>Emails: {{ user.email }}</li>
+            </ul>
+            </ol>
+
+        {%endfor%}
+        </ol>
+        {%else %}
+            <p>No access</p>
+        {%endif%}
+
+
+
+</body>
+</html>
